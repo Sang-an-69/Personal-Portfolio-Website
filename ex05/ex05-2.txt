@@ -1,0 +1,10 @@
+Applying an inline style
+
+1. Open the article twenties.html. If you worked to the end of the exercise, you will have a rule that makes the h2 elements red.
+
+2. Write an inline style that makes the second h2 gray. We’ll do that right in the opening h2 tag using the style attribute, as shown here:
+
+  <h2 style="color: gray">Connect-the-Dots</h2>
+
+3. Save the file and open it in a browser. Now the second heading is gray,
+overriding the red color set in the embedded style sheet. The other h2 heading is unaffected.

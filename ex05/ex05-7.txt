@@ -1,0 +1,55 @@
+Finishing touches
+
+0. Let・s add a few finishing touches to the online menu, menu.html. It might be useful to save the file and look at it in the browser after each step to see the effect of your edits and to make sure you・re 
+
+1. First, I have a few global changes to the body element in mind. I・ve had a change of heart about the font-family. I think that a serif font such as Georgia would be more sophisticated and appropriate for a bistro menu. Let・s also use the line-height property to open up the text lines and
+make them easier to read. Make these updates to the body style rule, as shown:
+	body {
+		font-family: Georgia, serif;
+		font-size: small;
+		line-height: 1.75em;
+	}
+	
+2. I also want to redesign the header section of the document. Remove the teal color setting by deleting that whole rule. Once that is done, make the h1 purple and the paragraph in the header gray. You can just add color declarations to the existing rules.
+	#info { color: teal; } /* delete */	
+	h1 {
+		font: bold 1.5em ：Marko One；, Georgia, serif;
+		color: purple;}
+	#info p {
+		font-style: italic;
+		color: gray;}
+		
+3. Next, to imitate a fancy print menu, I・m going to center a few key elements on the page using the text-align property. Write a rule with a grouped selector to center the headings and the info section.
+	h1, h2, #info {
+		text-align: center;
+	}
+	
+4. I want to make the ：Appetizer； and ：Main Courses； h2 headings kind of special. Instead of large, bold type, I・m going to use all uppercase letters, extra letter spacing, and color to call attention to the headings. Here・s the new rule for h2 elements that includes all of these changes.
+	h2 {
+		font-size: 1em;
+		text-transform: uppercase;
+		letter-spacing: .5em;
+		color: purple;
+	}
+	
+5. We・re really close now; just a few more tweaks to those paragraphs right after the h2 headings. Let・s center those too and make them italic.
+	h2 + p {
+		text-align: center;
+		font-style: italic;
+	}
+Note that I・ve used an adjacent sibling selector (h2 + p) to select ：any paragraph that follows an h2.； This method will not work in Internet Explorer 6, so if that concerns you, you could also select each of them using the contextual selectors #appetizers p and #entrees p.
+
+6. Next, add a softer color to the menu item names (in dt elements). I・ve chosen ：sienna,； one of the names from the CSS3 color module. Note that the strong elements in those dt elements stay maroon because the color applied to the strong elements overrides the color inherited by their parents.
+	dt {
+		font-weight: bold;
+		color: sienna;
+	}
+
+7. Finally, for kicks, let・s add a drop shadow under the h1 heading.
+	h1 {
+		font: bold 1.5em "Marko One", Georgia, serif;
+		color: purple;
+		text-shadow: .1em .1em .2em lightslategray;
+	}
+
+8. Save this file and if it works on browser.

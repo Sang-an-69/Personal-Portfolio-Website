@@ -1,0 +1,28 @@
+Setting font size
+
+0. Let’s refine the size of some of the text elements to give the online menu a more sophisticated appearance. Open menu.html in a text editor and follow the steps below. You can save the document at any point and take a peek in the browser to see the results of your work. You should also feel free to try out other size values along the way.
+
+1. There are many approaches to sizing text on web pages. In this example, I’ll stick with the preferred method of the best web developers I know, which is to start by putting a stake in the ground and setting the body element to 100%, thus clearing the way for em measurements thereafter.
+
+  body {
+    font-family: Verdana, sans-serif;
+    font-size: 100%;
+  }
+
+2. I’d like the main text elements to be 14 pixels instead of the default 16 pixels (if it’s too small for my visitors, they can zoom it larger in the browser). I’ll add a new rule with a grouped selector to set the size of p and dl elements to .875em, using the formula target (14) ÷ context (16) = .875. I could have used 87.5% to achieve the same thing.
+
+  p, dl {
+    font-size: .875em;
+  }
+
+
+3. Now let’s get the size of the headings under control. I’d like the main heading (h1) to be one and a half times larger than the body text. The h2s can be the default text size (1em).
+
+  h1 {
+    font-family: "Marko One",
+    Georgia, serif;
+    font-size: 1.5em
+  }
+  h2 {
+    font-size: 1em;
+  }

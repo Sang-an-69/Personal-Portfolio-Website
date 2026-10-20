@@ -1,0 +1,31 @@
+Your first style sheet
+
+1. Open twenties.html in a text editor. The style element is used to embed a style sheet in an HTML document.
+
+2. Type the following rules into the document, just as you see them here:
+	<style>
+		h1 {
+			color: green;
+		}
+		p {
+			font-size: small;
+			font-family: sans-serif;
+		}
+	</style>
+
+3. Save the file, and take a look at it in the browser. You should notice some changes (if your browser already uses a sans-serif font, you may only see a size change). If not, go back and check that you included both the opening and closing curly bracket and semicolons. It¡¦s easy to accidentally omit these characters, causing the style sheet not to work. 
+
+4. Now we¡¦ll change and add to the style sheet to see how easy it is to write rules and see the effects of the changes. Here are a few things to try (remember that you need to save the document after each change in order for the changes to be visible when you reload it in the browser).
+	. Make the h1 element ¡§gray¡¨ and take a look at it in the browser. Then make it ¡§blue¡¨. Finally, make it ¡§red¡¨.
+	. Add a new rule that makes the h2 elements red as well.
+	. Add a 100-pixel left margin to paragraph (p) elements using this declaration: 
+		margin-left: 100px;
+	Remember that you can add this new declaration to the existing rule for p elements.
+	. Add a 100-pixel left margin to the h2 headings as well.
+	. Add a red, 1-pixel border to the bottom of the h1 element using this declaration:
+		border-bottom: 1px solid red;
+	. Move the image to the right margin, and allow text to flow around it with the float property. The shorthand margin property shown in this rule adds zero pixels of space on the top and bottom of the image and 12 pixels of space on the left and right of the image.
+		img {
+			float: right;
+			margin: 0 12px;
+		}
